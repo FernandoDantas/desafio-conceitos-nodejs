@@ -9,6 +9,30 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+/**
+ * Métodos HTTP:
+ * 
+ * GET: Buscar informações do bakck-end
+ * POST: Criar uma informação no back-end
+ * PUT/PATCH: Alterar uma informação no back-end
+ * DELETE: Deletar uma informação no back-end
+ */
+
+ /**
+  * Tipos de parâmetros:
+  * 
+  * Query Params: Filtros e paginação
+  * Route Params: Identificar recursos (Atualizar/Deletar)
+  * Request Bodey: Conteúdo na hora de criar ou editar um reucurso (JSON)
+  */
+
+  /**
+   * Middleware:
+   * 
+   * Interceptador de requisições que interrromper totalmente a requisição ou lterar dados da requisição.
+   */
+
 const repositories = [];
 
 app.get("/repositories", (request, response) => {
